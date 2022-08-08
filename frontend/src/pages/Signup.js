@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import student from "../assets/certification.svg";
+import building from "../assets/building.svg";
 import {
   Container,
   Row,
@@ -7,6 +9,7 @@ import {
   FloatingLabel,
   Button,
   Form,
+  Card,
 } from "react-bootstrap";
 import { useSignup } from "../hooks/useSignup";
 const Signup = () => {
@@ -15,6 +18,7 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [institution, setInstitution] = useState("");
+  const [accounttype, setAccountType] = useState("");
 
   const { signup, isLoading, error } = useSignup();
 
@@ -25,8 +29,49 @@ const Signup = () => {
   };
   return (
     <Container style={{ maxWidth: 800 }}>
-      <h2 className="text-center display-4 fw-bold">Sign Up</h2>
+      <h2 className="text-center display-4 fw-bold pb-4">Sign Up</h2>
       <Form onSubmit={handleSubmit}>
+        <Row className="g-3">
+          <Col>
+            <Card
+              className="shadow border-grey border-1"
+              style={{ maxHeight: 300 }}
+            >
+              <Card.Body className="text-center">
+                <Card.Img
+                  variant="top"
+                  src={student}
+                  className=" mt-5"
+                  style={{ width: 128, height: 128 }}
+                />
+                <Card.Title className="display-5 pb-5 pt-1">Student</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card
+              className="shadow border-grey border-1"
+              style={{ height: 300 }}
+              onClick={() => {
+                setAccountType("Institution");
+                console.log(accounttype);
+              }}
+            >
+              <Card.Body className="text-center">
+                <Card.Img
+                  variant="top"
+                  src={building}
+                  className=" mt-5"
+                  style={{ width: 128, height: 128 }}
+                />
+                <Card.Text className="display-5 pb-5 pt-1">
+                  Institution
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <div className="mt-5"></div>
         <Row className="mt-4">
           <Col>
             <FloatingLabel
