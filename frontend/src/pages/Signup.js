@@ -138,12 +138,9 @@ const Signup = () => {
       </Form>
       <p class="text-center text-muted pt-3">
         Already have an account?{" "}
-        <a
-          href="localhost:3000/Login.js"
-          class="text-decoration-none text-primary"
-        >
-          Log In
-        </a>
+        <Link to="/login" class="text-decoration-none text-primary">
+          Sign In
+        </Link>
       </p>
       {error && <div className="text-center text-danger ">{error}</div>}
     </Container>
