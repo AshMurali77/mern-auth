@@ -15,7 +15,7 @@ const Login = () => {
   };
   return (
     <Container style={{ maxWidth: 800 }}>
-      <h2 className="text-center display-4 fw-bold pb-4">Sign In</h2>
+      <h2 className="text-center display-4 fw-bold pb-2">Sign In</h2>
       <Form onSubmit={handleSubmit}>
         <FloatingLabel
           controlId="floatingInput"
@@ -37,15 +37,19 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </FloatingLabel>
+        <Link to="/password-reset" style={{ textDecoration: "none" }}>
+          <p className="text-primary mt-2">I forgot my password </p>
+        </Link>
         <Button
           disabled={isLoading}
-          className="mt-4 w-100 btn-lg"
+          size="lg"
+          className="mt-2 w-100"
           type="submit"
         >
           Sign In
         </Button>
       </Form>
-      <p class="text-center text-muted pt-3">
+      <p className="text-center text-muted pt-4">
         Don't have an account?{" "}
         <Link to="/signup" class="text-decoration-none text-primary">
           Create an Account

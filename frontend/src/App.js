@@ -3,15 +3,24 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 //pages and components
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import "bootstrap/dist/css/bootstrap.min.css";
+import PasswordReset from "./pages/PasswordReset";
+import Navigation from "./components/Navbar";
+
+//styling
+import "./sass/main.scss";
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-        </Routes>
+        <Navigation />
+        <div>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/password-reset" element={<PasswordReset />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );

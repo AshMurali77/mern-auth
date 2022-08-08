@@ -130,7 +130,8 @@ const Signup = () => {
         </FloatingLabel>
         <Button
           disabled={isLoading}
-          className="mt-4 w-100 btn-lg"
+          size="lg"
+          className="mt-4 w-100"
           type="submit"
         >
           Sign Up
