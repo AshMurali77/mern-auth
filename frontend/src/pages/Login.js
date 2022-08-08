@@ -51,7 +51,7 @@ const Login = () => {
       </Form>
       <p className="text-center text-muted pt-4">
         Don't have an account?{" "}
-        <Link to="/signup" class="text-decoration-none text-primary">
+        <Link to="/signup" className="text-decoration-none text-primary">
           Create an Account
         </Link>
       </p>
