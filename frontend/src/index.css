@@ -13,6 +13,16 @@ body {
 .border-grey{
   border-color: #AAAABC;
 }
+div.dropdown-menu.show {
+  background-color: #ECF0FC;
+}
+.nav-text:hover, .dropdown-toggle:hover{
+  color:#4169e1 !important;
+}
+
+#nav-signup:hover{
+  background-color: #4169e1;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
