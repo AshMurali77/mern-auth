@@ -6,7 +6,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import PasswordReset from "./pages/PasswordReset";
 import Navigation from "./components/Navbar";
-
+import Footer from "./components/Footer";
 //styling
 import "./sass/main.scss";
 
@@ -23,6 +23,7 @@ function App() {
             <Route path="/password-reset" element={<PasswordReset />} />
           </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );
