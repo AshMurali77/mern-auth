@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Button,
   Col,
@@ -8,19 +9,17 @@ import {
   Ratio,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import InterestForm from "../components/InterestForm";
 //Image imports
 import building from "../assets/building.svg";
 import recordAssessment from "../assets/record-assessment.svg";
 import analytics from "../assets/analytics.svg";
 import files from "../assets/files.svg";
 import dataImpact from "../assets/data-impact.svg";
-import dataUpload from "../assets/data-upload.svg";
-import fileTransfer from "../assets/file-transfer.svg";
-import relaxationTwo from "../assets/relaxation-two.svg";
-import studentCTA from "../assets/student-cta.svg";
 
 const Institutions = () => {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <>
       <section id="intro" className="bg-blue mt-4">
@@ -193,9 +192,14 @@ const Institutions = () => {
             Schedule a consultation with our team and learn more about what ALO
             can do for your institution
           </p>
-          <Button variant="outline-primary" size="lg">
+          <Button
+            variant="outline-primary"
+            size="lg"
+            onClick={() => setModalShow(true)}
+          >
             Let's Connect
           </Button>
+          <InterestForm show={modalShow} onHide={() => setModalShow(false)} />
         </Container>
       </section>
     </>

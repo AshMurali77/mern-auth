@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import {
   Container,
   Row,
@@ -9,7 +9,7 @@ import {
   Ratio,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import InterestForm from "../components/InterestForm";
 //Image imports
 import hero from "../assets/certification-two.svg";
 import teacher from "../assets/Teacher.svg";
@@ -19,6 +19,8 @@ import student from "../assets/student.svg";
 import graduation from "../assets/graduation.svg";
 
 const Home = () => {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <>
       <section className="bg-blue mt-4">
@@ -149,9 +151,14 @@ const Home = () => {
             Join the ALO network and take the next step in creating a new system
             of educational record management
           </p>
-          <Button variant="outline-primary" size="lg">
+          <Button
+            variant="outline-primary"
+            size="lg"
+            onClick={() => setModalShow(true)}
+          >
             Let's Go
           </Button>
+          <InterestForm show={modalShow} onHide={() => setModalShow(false)} />
           <Container className=" d-none d-lg-block">
             <Image src={graduation} alt="graduation" />
           </Container>

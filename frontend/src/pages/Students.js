@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Button,
   Col,
@@ -8,7 +9,7 @@ import {
   Ratio,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import InterestForm from "../components/InterestForm";
 //Image imports
 import relaxation from "../assets/relaxation.svg";
 import transfer from "../assets/transfer.svg";
@@ -20,6 +21,8 @@ import fileTransfer from "../assets/file-transfer.svg";
 import relaxationTwo from "../assets/relaxation-two.svg";
 import studentCTA from "../assets/student-cta.svg";
 const Students = () => {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <>
       <section id="intro" className="bg-blue mt-4">
@@ -186,9 +189,14 @@ const Students = () => {
             Sign up free today and take the next step towards your educational
             future.{" "}
           </p>
-          <Button variant="outline-primary" size="lg">
+          <Button
+            variant="outline-primary"
+            size="lg"
+            onClick={() => setModalShow(true)}
+          >
             Let's Do This
           </Button>
+          <InterestForm show={modalShow} onHide={() => setModalShow(false)} />
           <Container className=" d-none d-lg-block py-3">
             <Image src={studentCTA} alt="time" />
           </Container>
