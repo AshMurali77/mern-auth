@@ -29,8 +29,7 @@ const Students = () => {
               <h2 className="display-4 ">
                 Removing the obstacles surrounding educational data
               </h2>
-              <p>
-                <span className="lead" />
+              <p className="lead">
                 Spend less time stressing over files and more time enjoying your
                 college experience
               </p>
