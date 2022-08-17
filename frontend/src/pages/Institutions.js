@@ -33,11 +33,13 @@ const Institutions = () => {
                 around record processing by using distributed ledger technology
                 to create an instantaneous record transfer process.
               </p>
-              <Link to="/signup">
-                <Button size="lg" role="button">
-                  Speak With Our Team
-                </Button>
-              </Link>
+              <Button
+                size="lg"
+                role="button"
+                onClick={() => setModalShow(true)}
+              >
+                Speak With Our Team
+              </Button>
             </Col>
             <Col md={5} className="d-none d-md-block">
               <Image fluid src={building} alt="school building image" />
@@ -112,9 +114,12 @@ const Institutions = () => {
                     educational records to your in house database rather than
                     upending your existing infrastructure.
                   </Card.Text>
-                  <Link to="/signup">
-                    <Button variant="outline-primary">Get Started Now</Button>
-                  </Link>
+                  <Button
+                    variant="outline-primary"
+                    onClick={() => setModalShow(true)}
+                  >
+                    Get Started Now
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -131,9 +136,12 @@ const Institutions = () => {
                     you to create custom charts and datasets that fit your
                     institution's needs.
                   </Card.Text>
-                  <Link to="/signup">
-                    <Button variant="outline-primary">Save Time</Button>
-                  </Link>
+                  <Button
+                    variant="outline-primary"
+                    onClick={() => setModalShow(true)}
+                  >
+                    Save Time
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -147,12 +155,15 @@ const Institutions = () => {
                   <Card.Text>
                     Rather than engaging in a slow, manual process to assess
                     course transfer equivalency, ALO's algorithm automates the
-                    transfer equivalency, saving you time and administrative
-                    headache.
+                    transfer equivalency process, saving you time and
+                    administrative headache.
                   </Card.Text>
-                  <Link to="/signup">
-                    <Button variant="outline-primary">The Whitepaper</Button>
-                  </Link>
+                  <Button
+                    variant="outline-primary"
+                    onClick={() => setModalShow(true)}
+                  >
+                    The Whitepaper
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>

@@ -5,8 +5,6 @@ import Home from "./pages/Home";
 import Vision from "./pages/Vision";
 import Students from "./pages/Students";
 import Institutions from "./pages/Institutions";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
 import PasswordReset from "./pages/PasswordReset";
 import Navigation from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -24,8 +22,6 @@ function App() {
             <Route path="/vision" element={<Vision />} />
             <Route path="/students" element={<Students />} />
             <Route path="/institutions" element={<Institutions />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
             <Route path="/password-reset" element={<PasswordReset />} />
           </Routes>
         </div>

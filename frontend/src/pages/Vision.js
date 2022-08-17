@@ -1,7 +1,211 @@
-import React from "react";
+import { useState } from "react";
+import {
+  Button,
+  Container,
+  Ratio,
+  Card,
+  Row,
+  Col,
+  Carousel,
+} from "react-bootstrap";
+import InterestForm from "../components/InterestForm";
 
+//image imports
+import time from "../assets/time.svg";
+import labor from "../assets/labor.svg";
+import cost from "../assets/cost.svg";
 const Vision = () => {
-  return <div>Vision</div>;
+  const [modalShow, setModalShow] = useState(false);
+
+  return (
+    <>
+      <section id="intro" className="bg-blue mt-4">
+        <Container className="text-center">
+          <h2 className="display-3 fw-bold">
+            Breaking Down Educational Barriers
+          </h2>
+          <p className="lead">
+            Filled with manual processes, inefficiencies, and high
+            organizational costs, the administrative headache around educational
+            record management leaves students and institutions worse off. ALO
+            seeks to solve that issue, creating an digital and distributed
+            system that saves times and lowers costs -- for everyone.
+          </p>
+          <Button size="lg">Our Solution</Button>
+        </Container>
+      </section>
+
+      <section id="solutions">
+        <Container className="text-center">
+          <h2 className="display-3">Modern Problems, Modern Solutions</h2>
+          <p className="lead">
+            Today's educational record management is marked by slow document
+            transfer, inefficient labor requirements, and high fees; ALO seeks
+            to decentralize this process and usher in a better system.
+          </p>
+          <Row gap={3}>
+            <Col md={4} className="d-flex  align-items-stretch">
+              <Card className="shadow ">
+                <Ratio aspectRatio="4x3">
+                  <Card.Img variant="top" src={time} />
+                </Ratio>
+                <Card.Body className="text-center  justify-content-around">
+                  <Card.Title>Transfer Speed</Card.Title>
+                  <Card.Text>
+                    With records being sent through snail mail or slow digital
+                    platforms, current educational document transfers can take
+                    days to process. ALO's decentralized approach aims to create
+                    an instantaneous transfer process, saving time for both
+                    students and institutions alike.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="d-flex align-items-stretch">
+              <Card className="shadow ">
+                <Ratio aspectRatio="4x3">
+                  <Card.Img variant="top" src={labor} />
+                </Ratio>
+                <Card.Body className="text-center  justify-content-around">
+                  <Card.Title>Labor Usage</Card.Title>
+                  <Card.Text>
+                    *metric* man hours are spent yearly on the manual task of
+                    educational record handling, driving productivity down and
+                    costs up. ALO seeks to create an automated record processing
+                    system, removing the burden of validation and record
+                    handling from institutions.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="d-flex  align-items-stretch">
+              <Card className="shadow ">
+                <Ratio aspectRatio="4x3">
+                  <Card.Img variant="top" src={cost} />
+                </Ratio>
+                <Card.Body className="text-center  justify-content-around">
+                  <Card.Title>Cost Barriers</Card.Title>
+                  <Card.Text>
+                    Because of the inefficiencies marring the entire educational
+                    record transfer process, costs to students can reach up to
+                    *metric* for record transfer. ALO seeks to build efficiency
+                    in all other areas so that students may realize zero cost
+                    and document transfer is free.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section id="unifying" className="bg-blue ">
+        <Container className="text-center ">
+          <h2 className="display-2  ">The Ultimate Goal?</h2>
+          <p className="lead ">One Unified System</p>
+          <Carousel
+            variant="dark"
+            controls={false}
+            className="border-secondary border border-2"
+          >
+            <Carousel.Item>
+              <div
+                style={{ width: 500, height: 500 }}
+                className=" bg-blue"
+                alt="First slide"
+              />
+              <Carousel.Caption className=" d-flex flex-column h-100 align-items-center justify-content-center">
+                <h3>Students</h3>
+                <p className="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consectetur esse labore eaque eveniet. Maiores quos non, eaque
+                  rerum quia vitae. Beatae, reprehenderit inventore? Vitae animi
+                  numquam maiores aut recusandae nostrum illo consequuntur
+                  magnam dignissimos molestias dolorem ut consequatur optio
+                  minima incidunt totam accusamus iure obcaecati nisi, deserunt
+                  reiciendis mollitia odit.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div
+                style={{ width: 500, height: 500 }}
+                className=" bg-blue"
+                alt="First slide"
+              />
+              <Carousel.Caption className=" d-flex flex-column h-100 align-items-center justify-content-center">
+                <h3>Institutions</h3>
+                <p className="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consectetur esse labore eaque eveniet. Maiores quos non, eaque
+                  rerum quia vitae. Beatae, reprehenderit inventore? Vitae animi
+                  numquam maiores aut recusandae nostrum illo consequuntur
+                  magnam dignissimos molestias dolorem ut consequatur optio
+                  minima incidunt totam accusamus iure obcaecati nisi, deserunt
+                  reiciendis mollitia odit.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div
+                style={{ width: 500, height: 500 }}
+                className=" bg-blue"
+                alt="First slide"
+              />
+              <Carousel.Caption className=" d-flex flex-column h-100 align-items-center justify-content-center">
+                <h3>Employers</h3>
+                <p className="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consectetur esse labore eaque eveniet. Maiores quos non, eaque
+                  rerum quia vitae. Beatae, reprehenderit inventore? Vitae animi
+                  numquam maiores aut recusandae nostrum illo consequuntur
+                  magnam dignissimos molestias dolorem ut consequatur optio
+                  minima incidunt totam accusamus iure obcaecati nisi, deserunt
+                  reiciendis mollitia odit.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div
+                style={{ width: 500, height: 500 }}
+                className=" bg-blue"
+                alt="First slide"
+              />
+              <Carousel.Caption className=" d-flex flex-column h-100 align-items-center justify-content-center">
+                <h3>Learning Platforms</h3>
+                <p className="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consectetur esse labore eaque eveniet. Maiores quos non, eaque
+                  rerum quia vitae. Beatae, reprehenderit inventore? Vitae animi
+                  numquam maiores aut recusandae nostrum illo consequuntur
+                  magnam dignissimos molestias dolorem ut consequatur optio
+                  minima incidunt totam accusamus iure obcaecati nisi, deserunt
+                  reiciendis mollitia odit.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </Container>
+      </section>
+
+      <section id="main-cta">
+        <Container className="text-center">
+          <h2 className="display-2">ALO</h2>
+          <p className="lead">
+            Removing the barriers to education access, one record at a time.
+          </p>
+          <Button
+            variant="outline-primary"
+            size="lg"
+            onClick={() => setModalShow(true)}
+          >
+            Join Us Today
+          </Button>
+          <InterestForm show={modalShow} onHide={() => setModalShow(false)} />
+        </Container>
+      </section>
+    </>
+  );
 };
 
 export default Vision;

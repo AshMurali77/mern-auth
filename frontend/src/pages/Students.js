@@ -8,7 +8,6 @@ import {
   Card,
   Ratio,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import InterestForm from "../components/InterestForm";
 //Image imports
 import relaxation from "../assets/relaxation.svg";
@@ -36,11 +35,14 @@ const Students = () => {
                 Spend less time stressing over files and more time enjoying your
                 college experience
               </p>
-              <Link to="/signup">
-                <Button variant="outline-primary" size="lg" role="button">
-                  Sign Up Free
-                </Button>
-              </Link>
+              <Button
+                variant="outline-primary"
+                size="lg"
+                role="button"
+                onClick={() => setModalShow(true)}
+              >
+                Sign Up Free
+              </Button>
             </Col>
             <Col md={5} className="d-none d-md-block">
               <Image fluid src={relaxation} alt="relaxation image" />
@@ -71,9 +73,12 @@ const Students = () => {
                     high school, ALO puts the records in your hands, letting you
                     send them to your dream schools at almost no cost.{" "}
                   </Card.Text>
-                  <Link to="/signup">
-                    <Button variant="outline-primary">Get Started Now</Button>
-                  </Link>
+                  <Button
+                    variant="outline-primary"
+                    onClick={() => setModalShow(true)}
+                  >
+                    Get Started Now
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -89,9 +94,12 @@ const Students = () => {
                     process, you can easily search for transfer institutions and
                     send your records with a few simple taps.
                   </Card.Text>
-                  <Link to="/signup">
-                    <Button variant="outline-primary">Save Time</Button>
-                  </Link>
+                  <Button
+                    variant="outline-primary"
+                    onClick={() => setModalShow(true)}
+                  >
+                    Save Time
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -107,15 +115,20 @@ const Students = () => {
                     requirements or attending college at night, ALO can help you
                     manage your records, even across institutions.{" "}
                   </Card.Text>
-                  <Link to="/signup">
-                    <Button variant="outline-primary">Sign Up Free</Button>
-                  </Link>
+
+                  <Button
+                    variant="outline-primary"
+                    onClick={() => setModalShow(true)}
+                  >
+                    Sign Up Free
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
         </Container>
       </section>
+
       <section id="student-process-flow" className="bg-blue">
         <Container className="w-75">
           <Container lg className="border-bottom border-secondary border-1">
@@ -182,6 +195,7 @@ const Students = () => {
           </Container>
         </Container>
       </section>
+
       <section id="main-cta">
         <Container className="text-center">
           <h2 className="display-2">What Are You Waiting For?</h2>

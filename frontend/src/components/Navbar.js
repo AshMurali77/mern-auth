@@ -1,30 +1,24 @@
-import {
-  Container,
-  Navbar,
-  Button,
-  Nav,
-  NavDropdown,
-  Row,
-  Col,
-  Stack,
-} from "react-bootstrap";
+import { useState } from "react";
+import { Container, Navbar, Button, Nav, NavDropdown } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import { useLogout } from "../hooks/useLogout";
-import { useAuthContext } from "../hooks/useAuthContext";
+/* import { useLogout } from "../hooks/useLogout";
+import { useAuthContext } from "../hooks/useAuthContext"; */
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
+import InterestForm from "../components/InterestForm";
 
 const Navigation = () => {
-  const { logout } = useLogout();
-  const { user } = useAuthContext();
-  const location = useLocation();
+  /*   const { logout } = useLogout(); */
+  /*   const { user } = useAuthContext();
+  const location = useLocation(); */
+  const [modalShow, setModalShow] = useState(false);
 
-  const handleClick = () => {
+  /*   const handleClick = () => {
     logout();
-  };
+  }; */
 
   return (
     <>
-      {(location.pathname === "/login" ||
+      {/*       {(location.pathname === "/login" ||
         location.pathname === "/signup" ||
         location.pathname === "/password-reset") && (
         <Navbar
@@ -61,7 +55,7 @@ const Navigation = () => {
               )}
           </Container>
         </Navbar>
-      )}
+      )} */}
       <Navbar
         bg="blue"
         expand="lg"
@@ -118,11 +112,15 @@ const Navigation = () => {
               </NavDropdown>
             </Nav>
           </NavbarCollapse>
-          <Link to="/signup">
-            <Button id="nav-signup" variant="outline-secondary">
-              Sign Up
-            </Button>
-          </Link>
+
+          <Button
+            id="nav-signup"
+            variant="outline-secondary"
+            onClick={() => setModalShow(true)}
+          >
+            Sign Up
+          </Button>
+          <InterestForm show={modalShow} onHide={() => setModalShow(false)} />
         </Container>
       </Navbar>
     </>
