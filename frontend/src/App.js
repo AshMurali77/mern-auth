@@ -8,6 +8,7 @@ import Institutions from "./pages/Institutions";
 import PasswordReset from "./pages/PasswordReset";
 import Navigation from "./components/Navbar";
 import Footer from "./components/Footer";
+import Error from "./pages/Error";
 //styling
 import "./sass/main.scss";
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/students" element={<Students />} />
             <Route path="/institutions" element={<Institutions />} />
             <Route path="/password-reset" element={<PasswordReset />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </div>
         <Footer />
