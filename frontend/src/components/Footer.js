@@ -1,74 +1,59 @@
-import {} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer class="text-center text-lg-start bg-blue text-muted">
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>ALO Blockchain Solutions
-              </h6>
-            </div>
+    <section className="text-center text-lg-start bg-blue text-muted">
+      <Container className="text-center mt-5 text-md-start">
+        <Row className="mt-3">
+          <Col md={3} lg={4} xl={3} className="mx-auto mb-4">
+            <h6 className="text-uppercase fw-bold mb-4">
+              ALO Blockchain Solutions
+            </h6>
+          </Col>
+          <Col md={2} lg={2} xl={2} className="mx-auto mb-4">
+            <h6 className="text-uppercase fw-bold mb-4">Company</h6>
+            <Link to="/vision" className="text-reset text-decoration-none">
+              <p>Vision</p>
+            </Link>
+            <Link to="/students" className="text-reset text-decoration-none">
+              <p>Students</p>
+            </Link>
+            <Link
+              to="/institutions"
+              className="text-reset text-decoration-none"
+            >
+              <p>Institutions</p>
+            </Link>
+          </Col>
 
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Company</h6>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none">
-                  Vision
-                </a>
-              </p>
-              <p>
-                <a
-                  href="/students.html"
-                  class="text-reset text-decoration-none"
-                >
-                  Students
-                </a>
-              </p>
-              <p>
-                <a
-                  href="/institutions.html"
-                  class="text-reset text-decoration-none"
-                >
-                  Institutions
-                </a>
-              </p>
-            </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Resources</h6>
-              <p>
-                <a href="#!" class="text-reset">
-                  Our Whitepaper
-                </a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">
-                  Blockchain Introduction
-                </a>
-              </p>
-              <p>
-                <a href="/function.html" class="text-reset">
-                  Why Blockchain
-                </a>
-              </p>
-            </div>
+          <Col md={3} lg={2} xl={2} className="mx-auto mb-4">
+            <h6 className="text-uppercase fw-bold mb-4">Resources</h6>
+            <Link to="/function" className="text-reset">
+              <p>Our Whitepaper</p>
+            </Link>
+            <Link to="/function" className="text-reset">
+              <p>Blockchain Introduction</p>
+            </Link>
+            <Link to="/function" className="text-reset">
+              <p>Why Blockchain</p>
+            </Link>
+          </Col>
 
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">About</h6>
-              <p>Terms & Conditions</p>
-              <p>Privacy Policy</p>
-            </div>
-          </div>
-        </div>
-        <div class="text-center p-4">
+          <Col md={4} lg={3} xl={3} className="mx-auto mb-md-0 mb-4">
+            <h6 className="text-uppercase fw-bold mb-4">About</h6>
+            <p className="text-reset">Terms & Conditions</p>
+            <p className="text-reset text-decoration-none">Privacy Policy</p>
+          </Col>
+        </Row>
+
+        <div className="text-center p-4">
           © 2022 Copyright:
-          <a class="text-reset fw-bold" href="aloblockchain.com">
+          <Link to="/" className="text-reset fw-bold">
             aloblockchain.com
-          </a>
+          </Link>
         </div>
-      </section>
-    </footer>
+      </Container>
+    </section>
   );
 };
 
