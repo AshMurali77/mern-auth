@@ -28,14 +28,14 @@ const Footer = () => {
 
           <Col md={3} lg={2} xl={2} className="mx-auto mb-4">
             <h6 className="text-uppercase fw-bold mb-4">Resources</h6>
-            <Link to="/function" className="text-reset">
+            <Link to="/coming-soon" className="text-reset">
               <p>Our Whitepaper</p>
             </Link>
             <Link to="/function" className="text-reset">
               <p>Blockchain Introduction</p>
             </Link>
             <Link to="/function" className="text-reset">
-              <p>Why Blockchain</p>
+              <p>Why Solana</p>
             </Link>
           </Col>
 

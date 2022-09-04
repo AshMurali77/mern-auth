@@ -15,7 +15,9 @@ const Vision = () => {
             Placing educational records on a decentralized platform promotes a
             more efficient and transparent data transfer process.
           </p>
-          <Button size="lg">Our Solution</Button>
+          <Link to="/coming-soon">
+            <Button size="lg">Our Whitepaper</Button>
+          </Link>
         </Container>
       </section>
 
@@ -43,20 +45,20 @@ const Vision = () => {
 
       <section id="blockchain" className="bg-blue">
         <Container className="text-center">
-          <Row>
-            <Col md={6}>
-              <h2 className="display-2">Let's Get Technical</h2>
+          <Row className="align-items-center">
+            <Col md={7}>
+              <h2 className="display-4">Efficient, Reliable, Secure</h2>
               <p className="lead">
                 With a high throughput and low transaction cost, the Solana
                 blockchain is our blockchain of choice to ensure reliable and
                 efficient record transfer.
               </p>
 
-              <Link to={{ pathname: "https://solana.com/" }}>
+              <a href="https://solana.com/">
                 <Button variant="outline-primary" size="lg">
                   Learn More
                 </Button>
-              </Link>
+              </a>
             </Col>
             <Col>
               <Ratio

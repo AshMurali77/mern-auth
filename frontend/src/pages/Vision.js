@@ -8,6 +8,7 @@ import {
   Col,
   Carousel,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import InterestForm from "../components/InterestForm";
 
 //image imports
@@ -31,7 +32,9 @@ const Vision = () => {
             seeks to solve that issue, creating an digital and distributed
             system that saves times and lowers costs -- for everyone.
           </p>
-          <Button size="lg">Our Solution</Button>
+          <Link to="/">
+            <Button size="lg">Our Solution</Button>
+          </Link>
         </Container>
       </section>
 
