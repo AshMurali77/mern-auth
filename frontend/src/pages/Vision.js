@@ -91,9 +91,9 @@ const Vision = () => {
                   <Card.Text>
                     Because of the inefficiencies marring the entire educational
                     record transfer process, costs to students can reach up to
-                    *metric* for record transfer. ALO seeks to build efficiency
-                    in all other areas so that students may realize zero cost
-                    and document transfer is free.
+                    $20-$30 per record for transfer. ALO seeks to build
+                    efficiency in all other areas so that students may realize
+                    zero cost and document transfer is free.
                   </Card.Text>
                 </Card.Body>
               </Card>
