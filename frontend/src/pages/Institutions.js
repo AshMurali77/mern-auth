@@ -55,26 +55,29 @@ const Institutions = () => {
               md={3}
               className="text-center border-end border-secondary border-2"
             >
-              <h3 className="display-5 fw-bold">100</h3>
-              <p className="lead">Metric Description</p>
+              <h3 className="display-5 fw-bold">2.1 Million</h3>
+              <p className="lead">Transferred Transcripts per year</p>
             </Col>
             <Col
               md={3}
               className="text-center border-end border-secondary border-2"
             >
-              <h3 className="display-5 fw-bold">$5000</h3>
-              <p className="lead">Metric Description</p>
+              <h3 className="display-5 fw-bold">$11 Million</h3>
+              <p className="lead">Spent on transcript transfer</p>
             </Col>
             <Col
               md={3}
               className="text-center border-end border-secondary border-2"
             >
-              <h3 className="display-5 fw-bold">12%</h3>
-              <p className="lead">Metric Description</p>
+              <h3 className="display-5 fw-bold">72+ Hours</h3>
+              <p className="lead">Average Transcript Processing Time</p>
             </Col>
-            <Col md={3} className="text-center ">
-              <h3 className="display-5 fw-bold">1200</h3>
-              <p className="lead">Metric Description</p>
+            <Col
+              md={3}
+              className="text-center border-end border-secondary border-2"
+            >
+              <h3 className="display-5 fw-bold">$140 - $200</h3>
+              <p className="lead">Cost per unsecured record</p>
             </Col>
           </Row>
         </Container>
