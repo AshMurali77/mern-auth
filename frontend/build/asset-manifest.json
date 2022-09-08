@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.52d33dd3.css",
+    "main.js": "/static/js/main.adefa3de.js",
+    "static/media/sol-logo.png": "/static/media/sol-logo.88dd9cd2498aebe1ee8c.png",
+    "static/media/building.svg": "/static/media/building.3741c561fa60af6a8ac6d8408bdf1779.svg",
+    "static/media/construction.svg": "/static/media/construction.fc5ae795ff711e4e971de7327b9fc6d0.svg",
+    "static/media/prospective-student.svg": "/static/media/prospective-student.87056a7b944d4f80d7a3f869f103f71e.svg",
+    "static/media/labor.svg": "/static/media/labor.8f8ccdfbe35eaba8405bbf41a48193cd.svg",
+    "static/media/record-assessment.svg": "/static/media/record-assessment.c964da508845c819a2d753c856a0e79e.svg",
+    "static/media/Teacher.svg": "/static/media/Teacher.10c6ee11d7707b8757efc71a7a033a41.svg",
+    "static/media/cost.svg": "/static/media/cost.5a70c1ca8505a518d5abf68a06cfdc38.svg",
+    "static/media/graduation.svg": "/static/media/graduation.500577a40785927c779f7d26b291a85b.svg",
+    "static/media/summer-transfer.svg": "/static/media/summer-transfer.3b8ec25853e06a5f528fa704b88f0526.svg",
+    "static/media/transfer.svg": "/static/media/transfer.3e31b2cceb517d1fc99a61a82b023d19.svg",
+    "static/media/relaxation-two.svg": "/static/media/relaxation-two.c3eabdf28afda233c8a07e856f72bc41.svg",
+    "static/media/file-transfer.svg": "/static/media/file-transfer.c00784fbe71f8ec23bfd1f0771824fac.svg",
+    "static/media/time.svg": "/static/media/time.9675f4827d6fc2ee1e4bc4fe46df3c45.svg",
+    "static/media/relaxation.svg": "/static/media/relaxation.b16a1f111ca1955dd01827cb0625ed99.svg",
+    "static/media/data-impact.svg": "/static/media/data-impact.0c86e5ca844a9a8fe08f6108d533a54b.svg",
+    "static/media/certification-two.svg": "/static/media/certification-two.6893c1f228303745298fbb71f26e41c1.svg",
+    "static/media/Teacher-two.svg": "/static/media/Teacher-two.579359a00111683b637dc43f75fd29fb.svg",
+    "static/media/data-upload.svg": "/static/media/data-upload.64043a8539c7167396ffeeff9334cdf1.svg",
+    "static/media/error.svg": "/static/media/error.6ca45bfb9035b78143a08e293a50153c.svg",
+    "static/media/student.svg": "/static/media/student.628bf982af58eb56f7ca0f03f789cf88.svg",
+    "static/media/student-cta.svg": "/static/media/student-cta.b3c545b1dedcd1fb29ed9aadade5532f.svg",
+    "static/media/graduate.svg": "/static/media/graduate.5da4e68f2abada8e0fcff48eca139013.svg",
+    "static/media/analytics.svg": "/static/media/analytics.b6348b5d78f7f24ee6bd2f7087698e32.svg",
+    "static/media/files.svg": "/static/media/files.0b821c766783d2cc2f0b8cfa82cb674e.svg",
+    "static/media/sign-in.svg": "/static/media/sign-in.19b23c7cb9befa03c4fb2db2c6b00fd6.svg",
+    "index.html": "/index.html",
+    "main.52d33dd3.css.map": "/static/css/main.52d33dd3.css.map",
+    "main.adefa3de.js.map": "/static/js/main.adefa3de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52d33dd3.css",
+    "static/js/main.adefa3de.js"
+  ]
+}
